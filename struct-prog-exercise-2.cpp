@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-/*data Dummy = { Data student dummy, sebagai contoh saja
+/*data Dummy = { Data student dummy, bisa digunakan sebagai contoh
     {"Fyodor", "Dostoevsky"},
     {"Leo", "Tolstoy"},
     {"Anton", "Chekhov"},
@@ -32,7 +32,7 @@ using namespace std;
 
 const int TOTAL_STUDENT = 20;
 
-struct studentType // deklarasi struct untuk student
+struct studentType
 {
     string studentFName;
     string studentLName;
@@ -42,15 +42,15 @@ struct studentType // deklarasi struct untuk student
 
 struct studentList
 {
-    studentType listOfStudent[TOTAL_STUDENT]; // array untuk menyimpan data
-    int listLength;                           // untuk loop saat pengambilan data
+    studentType listOfStudent[TOTAL_STUDENT];
+    int listLength;
 };
 
-void readStudentData(studentList &theList);                 // Baca inputan data dari user
-void assignGrade(studentList &theList);                     // Beri kategori tergantung nilai
-int findHighestScore(const studentList &theList);           // Cari nilai tertinggi
-void whoIsHighest(const studentList &theList, int highest); // Siapa yang punya nilai tertinggi
-void displayAllStudent(const studentList &theList);         // Tampilkan semua murid
+void readStudentData(studentList &theList);
+void assignGrade(studentList &theList);
+int findHighestScore(const studentList &theList);
+void whoIsHighest(const studentList &theList, int highest);
+void displayAllStudent(const studentList &theList);
 
 int main()
 {
